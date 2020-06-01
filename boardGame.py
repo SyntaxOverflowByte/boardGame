@@ -1,13 +1,25 @@
 import pygame
-
+import color_constants
 
 
 # Initiate pygame, as important as import
 pygame.init()
 
+# Make variables for game screen size
+display_width = 800
+display_height = 600
+
+# Color definitions
+black = color_constants.colors['black']
+white = color_constants.colors['white']
+red = color_constants.colors['red1']
+
+
+
+
 # Set the Display Window size, 
 # It takes a Tuple as an argument, which is why it's in double parantheses
-gameDisplay = pygame.display.set_mode((800,600))
+gameDisplay = pygame.display.set_mode((display_width, display_height))
 
 # Set the Window Caption
 pygame.display.set_caption('Passing the Board')
